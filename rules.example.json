@@ -1,0 +1,44 @@
+{
+  "keywords": [
+    "confidential",
+    "project-aurora"
+  ],
+  "custom_patterns": [
+    {
+      "name": "employee_id",
+      "regex": "EMP[0-9]{6}"
+    }
+  ],
+  "block_patterns": [
+    "ssn",
+    "credit_card",
+    "openai_key"
+  ],
+  "risk_levels": {
+    "openai_key": "high",
+    "employee_id": "medium"
+  },
+  "max_body_bytes": 1048576,
+  "max_request_bytes": 8388608,
+  "preview_chars": 0,
+  "redact_preview": true,
+  "entropy_enabled": true,
+  "entropy_min_len": 24,
+  "entropy_min_score": 3.8,
+  "include_hosts": [
+    "openai.com",
+    "openai.azure.com",
+    "anthropic.com",
+    "generativelanguage.googleapis.com",
+    "aiplatform.googleapis.com",
+    "bedrock",
+    "cohere.ai",
+    "ollama",
+    "localhost",
+    "127.0.0.1",
+    "::1"
+  ],
+  "exclude_hosts": [
+    "localhost"
+  ]
+}

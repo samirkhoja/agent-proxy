@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Go build/test artifacts
+/agentproxy
+/bin/
+/dist/
+*.test
+*.out
+coverage.out
+
+# Local caches/temp
+.gocache/
+.tmp/
+.tmpdata/
